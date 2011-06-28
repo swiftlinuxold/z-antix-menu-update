@@ -27,7 +27,17 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
+
+# To learn more about an imported module, import the module and enter its name.  
+# Example: import os;os
+# os module: from /usr/lib/python2.6, improves portability across platforms
+# sys modeule: built-in, used for controlling parameters in the runtime environment
+# random module: from /usr/lib/python2.6, generates random variables
+# mimetypes module: from /usr/lib/python2.6, determines the MIME type given a path name
+# glob module: from /usr/lib/python2.6, returns a list of all files in a directory with a 
+# specific pattern
 import os,sys,random,mimetypes,glob
+
 gnmp_st="/usr/share/applications"
 catacce_sl=[]
 catutil_sl=[]
@@ -43,8 +53,19 @@ catsysp_sl=[]
 catsysa_sl=[]
 cntacce=0;cntutil=0;cntgame=0;cntgrap=0;cntnetw=0;cntoffi=0
 cntothe=0;cntdeve=0;cntauvd=0;cntsyst=0;cntsysp=0;cntsysa=0
-diritems_sl = glob.glob(os.path.join(gnmp_st, "*.desktop"))
+diritems_sl = glob.glob(os.path.join(gnmp_st, "*.desktop")) 
+# diritems_sl: list of all *.desktop files in the /usr/share/applications directory
+a=set(diritems_sl)
+
 diritems_sl += glob.glob(os.path.join(gnmp_st, "*", "*.desktop"))
+b=set(diritems_sl)
+print ("a only\n")
+print (a-b)
+print ("\n\n\n\n\n\n\n")
+print ("b only\n")
+print (b-a)
+print ("\n\n\n\n\n\n\n")
+
 for item in diritems_sl:
   finp_st=os.path.join(gnmp_st,item)
   if finp_st.endswith(".desktop"):
