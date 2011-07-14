@@ -1,0 +1,50 @@
+AudioVideo (Multimedia): is_av
+Audio
+Video
+
+Development is_devel
+
+Education is_edu
+
+Electronics is_elec
+
+Engineering is_eng
+
+Game is_game
+
+Graphics is_gra
+	Photography
+	Scanning
+	Viewer
+
+HamRadio is_ham
+
+Network is_net
+
+Office is_of
+	Email is_email
+	Presentation is_pres
+	Spreadsheet is_spr
+	WordProcessor is_word
+	
+Settings is_settings
+	DesktopSettings is_desk
+	FileSystem is_file
+	HardwareSettings is_hw
+	Network is
+	PackageManager
+
+System (exclude HardwareSettings, DesktopSettings)
+	FileSystem
+	Monitor
+	Network
+	PackageManager
+
+Utility
+	Archiving
+	TerminalEmulator
+	Text Editor
+	TextTools
+	Calculator
+
+OTHER

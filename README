@@ -1,1 +1,12 @@
 This is the repository for the Python algorithm that updates the IceWM menu.  The purpose is to make the Swift Linux menu feel more like that of Puppy Linux.
+
+The menu auto-update entry in the menu calls the auto-icewm-menu.sh script in /usr/local/bin:
+prog "Update Menu (Auto)" /usr/share/icons/gTangish-2.0a1/32x32/apps/gnome-settings-default-applications.png auto-icewm-menu.sh 
+
+The auto-icewm-menu.sh script calls the icewm-xdg-menu script in /usr/local/bin:
+icewm-xdg-menu --terminal "roxterm -e %s" --default-entry-icon /usr/share/icons/Buuf-Deuce/128x128/apps/alacarte.png --with-theme-paths --theme Buuf-Deuce --entire-menu > ~/.icewm/application  
+The output of the "print" command goes into the file ~/.icewm/application .
+
+
+
+Categories are defined in /usr/share/desktop-directories .  The lxde-*-directory files contain the information on each category.  The "Name" parameter is the category shown in the menu.

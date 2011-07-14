@@ -1,0 +1,12 @@
+Accessories: Utility but not Accessibility or System
+Accessibility: Accessibility but not Settings
+Development: Development and emacs
+Education: Education
+Games: Game
+Graphics: Graphics but not Utility
+Internet: Network
+Multimedia: AudioVideo
+Office: Office
+System: System, not Settings or Package Manager
+Other: Other, not Core, Settings, or Screensaver
+Desktop Settings: Settings, Package Manager, or System
